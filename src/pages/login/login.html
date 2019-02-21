@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="text">
+    <ion-item>
+        <ion-label floating>
+          Username 
+        </ion-label>
+        <ion-input type="text" [(ngModel)] = "admin.email"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>
+            Password 
+          </ion-label>
+          <ion-input type="password" [(ngModel)] = "admin.Password"></ion-input>
+        </ion-item>
+</div>
+
+
+  
+  <br>
+  <div class="center">
+  <button outline round ion-button icon-start (click)= "Login(admin)">
+    <ion-icon name="md-checkmark-circle"></ion-icon>
+    Login
+  </button>
+</div>
+</ion-content>
+

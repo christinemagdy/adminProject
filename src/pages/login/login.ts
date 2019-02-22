@@ -18,7 +18,7 @@ export class LoginPage {
   {
     if(admin.email == "admin@gmail.com" && admin.Password == "admin123")
     {
-      this.navCtrl.setRoot('AboutPage');
+      this.navCtrl.setRoot('TabsPage');
     }
   }
 }

@@ -38,4 +38,9 @@ export class EldersPage {
     console.log('ionViewDidLoad EldersPage');
   }
 
+  Delete(i){
+
+    this.afDatabase.list('ElderData').remove(this.elderList[i].$key);
+  }
+
 }
